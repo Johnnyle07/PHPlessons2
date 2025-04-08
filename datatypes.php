@@ -1,14 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="style.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   </head>
 
+     <style>
+       
+        body {
+            background-color:rgb(0, 145, 255); 
+            color: #333; 
+        }
 
+        
+        .navbar {
+            background-color:rgb(0, 157, 255); 
+        }
+
+       
+        .btn-outline-success {
+            border-color: #58a6d5;
+            color: #58a6d5; 
+        }
+
+        .btn-outline-success:hover {
+            background-color: #58a6d5; 
+            color: white; 
+        }
+
+
+        input[type="text"] {
+            background-color: #f0f8ff; 
+            border: 1px solid #a1c8e0; /
+        }
+
+        
+        button {
+            background-color:rgb(0, 157, 255); 
+            border-color: #58a6d5; 
+            color: white;
+        }
+
+        button:hover {
+            background-color:rgb(0, 153, 255); 
+        }
+    </style>
 
 <html>
 
@@ -33,13 +71,14 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/DataTypes.php">Datatypes</a></li>
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/operators.php">Operators</a></li>
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/conditionals.php">Conditionals</a></li>
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/calculator.php"> Calculator</a></li>
-            <li><hr class="dropdown-divider"></li>
-           
-          </ul>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <hr class="dropdown-divider"></li>
+        
+      </ul> 
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -69,6 +108,8 @@ $name = 35.27825;
 $names = array("Cameron","Johnny","Kristan");
 echo $names ['2'];
 ?>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
 
 </body>
 
