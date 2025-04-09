@@ -66,13 +66,13 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="">Something else here</a></li>
-            <li><a class="dropdown-item" href="">Something else here</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a href="calculator.php">Calc</a></li>
+            <li><a href="calender.php">Calender</a></li>
+            <li><a  href="conditionals.php">Conditionals</a></li>
+            <li><a  href="datatypes.php">Datatype</a></li>
+            <li><a  href="operators.php">Operators</a></li>
             <li><hr class="dropdown-divider"></li>
-          </ul>
+    
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>

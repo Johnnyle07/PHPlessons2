@@ -66,10 +66,11 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/datatypes.php">Datatypes</a></li>
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/operators.php">Operators</a></li>
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/conditionals.php">Conditionals</a></li>
-            <li><a class="dropdown-item" href="http://localhost/PHP-Lessons/calculator.php"> Calculator</a></li>
+          <li><a href="calculator.php">Calc</a></li>
+            <li><a href="calender.php">Calender</a></li>
+            <li><a  href="conditionals.php">Conditionals</a></li>
+            <li><a  href="datatypes.php">Datatype</a></li>
+            <li><a  href="operators.php">Operators</a></li>
             <li><hr class="dropdown-divider"></li>
            
           </ul>
