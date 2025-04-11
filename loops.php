@@ -1,12 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
-     <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Page </title>
+</head>
+<body>
+<style>
         
         body {
             background-color:rgb(0, 145, 255); 
@@ -46,8 +46,7 @@
             background-color:rgb(0, 153, 255); 
         }
     </style>
-  <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,43 +88,28 @@
     </div>
   </div>
 </nav>
-</nav>
-  <?php
-   $x = 2;
+    <?php
+$x=10;
 
-   if ($x == 1) {
-    echo " Coach B is a leader!";
-   }
-   elseif ($x == 2) {
-    echo "Coach B is a leader!";
-   }
-   elseif ($x == 3) {
-    echo "Coach B is a leader!";
-   }
-   elseif ($x == 4 ) {
-    echo "Coach B is a leader!";
-   }
-   else {
-    echo " Coach B is hardworking!";
-   } 
-   ?>
- <?php
-    $x = 1;
-    switch ($x){
-        case 1:
-            echo "This statement is very true";
-        break;
-        case 2:
-            echo "This statment is correct";
-        break;
-        case 3:
-            echo "This statement could be false";
-        break;
-        case 4:
-            echo "This statemen could be true";
-        break;
-    }
+//Do While Loop
+do{
+    echo"Hello Coach B<br>";
+    $x++;
+}
+
+//While Loop
+while($x<=3);
+
+//For Loop
+for($x=0; $x<=3; $x++){
+    echo"Coach B <br>";
+}
+
+//Foreach Loop
+$array=array("Chancellor", "Liam", "Harrison","Johnny", "Jossemar");
+foreach($array as $loopdata){
+    echo"My name is ".$loopdata."<br>";
+}
     ?>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
-
+</body>
+</html>

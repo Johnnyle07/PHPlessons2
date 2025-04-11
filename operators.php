@@ -9,13 +9,13 @@
      <style>
         
         body {
-            background-color:rgb(0, 145, 255); 
+            background-color:rgb(17, 124, 58); 
             color: #333; 
         }
 
         
         .navbar {
-            background-color:rgb(0, 157, 255); 
+            background-color:rgb(0, 255, 13); 
         }
 
        
@@ -71,6 +71,10 @@
             <li><a  href="conditionals.php">Conditionals</a></li>
             <li><a  href="datatypes.php">Datatype</a></li>
             <li><a  href="operators.php">Operators</a></li>
+            <li><a  href="arrays.php">Arrays</a></li>
+            <li><a  href="functions.php">Functions</a></li>
+            <li><a  href="headers.php">Headers</a></li>
+            <li><a  href="loops.php">Loops</a></li>
             <li><hr class="dropdown-divider"></li>
            
           </ul>

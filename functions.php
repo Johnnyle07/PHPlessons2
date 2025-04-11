@@ -1,15 +1,17 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
-     <style>
-        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Page</title>
+</head>
+<body>
+<style>
+       
         body {
-            background-color:rgb(0, 145, 255); 
+            background-color:rgb(0, 145, 255); /
             color: #333; 
         }
 
@@ -26,18 +28,18 @@
 
         .btn-outline-success:hover {
             background-color: #58a6d5; 
-            color: white; 
+            color: white;
         }
 
-        
+       
         input[type="text"] {
             background-color: #f0f8ff; 
             border: 1px solid #a1c8e0; 
         }
 
-        
+      
         button {
-            background-color:rgb(0, 157, 255);
+            background-color:rgb(0, 157, 255); 
             border-color: #58a6d5; 
             color: white;
         }
@@ -46,8 +48,7 @@
             background-color:rgb(0, 153, 255); 
         }
     </style>
-  <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,43 +90,17 @@
     </div>
   </div>
 </nav>
-</nav>
-  <?php
-   $x = 2;
+    <?php
 
-   if ($x == 1) {
-    echo " Coach B is a leader!";
-   }
-   elseif ($x == 2) {
-    echo "Coach B is a leader!";
-   }
-   elseif ($x == 3) {
-    echo "Coach B is a leader!";
-   }
-   elseif ($x == 4 ) {
-    echo "Coach B is a leader!";
-   }
-   else {
-    echo " Coach B is hardworking!";
-   } 
-   ?>
- <?php
-    $x = 1;
-    switch ($x){
-        case 1:
-            echo "This statement is very true";
-        break;
-        case 2:
-            echo "This statment is correct";
-        break;
-        case 3:
-            echo "This statement could be false";
-        break;
-        case 4:
-            echo "This statemen could be true";
-        break;
-    }
+function newCalc($c){
+    $newnr=$c*2;
+    echo"This is a double of what i am writing right now. ".$newnr;
+}
+$c=50;
+newCalc($c);
+echo"<br>";
+$a=200;
+newCalc($a);
     ?>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
-
+</body>
+</html>

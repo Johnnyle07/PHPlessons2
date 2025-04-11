@@ -71,11 +71,15 @@
             Dropdown
           </a>
           <ul class="dropdown-menu">
-          <li><a href="calculator.php">Calc</a></li>
+          <li><a href="calculator.php">Calculator</a></li>
             <li><a href="calender.php">Calender</a></li>
             <li><a  href="conditionals.php">Conditionals</a></li>
             <li><a  href="datatypes.php">Datatype</a></li>
             <li><a  href="operators.php">Operators</a></li>
+            <li><a  href="arrays.php">Arrays</a></li>
+            <li><a  href="functions.php">Functions</a></li>
+            <li><a  href="headers.php">Headers</a></li>
+            <li><a  href="loops.php">Loops</a></li>
             <li><hr class="dropdown-divider"></li>
         
       </ul> 
