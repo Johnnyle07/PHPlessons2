@@ -47,6 +47,20 @@
         }
     </style>
   <body>
+  <?php
+session_start();
+?>
+ <?php 
+ $_SESSION['username'] = "Johnnyle24b";
+ echo $_SESSION ['username'];
+
+ if (!isset($_SESSION['username'])) {
+  echo "You are not logged in!";
+ } else {
+  echo "You are logged in!";
+ }
+
+?>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -75,6 +89,7 @@
             <li><a  href="functions.php">Functions</a></li>
             <li><a  href="headers.php">Headers</a></li>
             <li><a  href="loops.php">Loops</a></li>
+            <li><a href="superglobals.php">Superglobals</a><li>
             <li><hr class="dropdown-divider"></li>
           </ul>
         </li>
