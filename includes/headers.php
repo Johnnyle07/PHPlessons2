@@ -41,6 +41,8 @@
               <li><a class="dropdown-item" href="calculator.php">calculator</a></li>
               <li><a class="dropdown-item" href="arrays.php">arrays</a></li>
               <li><a class="dropdown-item" href="contacts.php">Contacts</a></li>
+              <li><a class="dropdown-item" href="superglobals.php">superglobals</a></li>
+              <li><a class="dropdown-item" href="connection.php">connection</a></li>
             </ul>
           </li>
         </ul>
@@ -48,7 +50,7 @@
     </div>
   </nav>
   <?php
-     $_Session['username']="Omar";
+     $_Session['username']="johnny";
     echo $_Session['username'];
     if (!isset($_Session['username'])){
       echo " You are not logged in";
