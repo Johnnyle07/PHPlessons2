@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -106,53 +107,43 @@ session_start();
     </div>
   </div>
 </nav>
- <!doctype html>
-<html lang="en">
-  <head>
-  <form method="GET">
-<input type="text" name="num1" placeholder="Number 1">
-      <input type="text" name="num2" placeholder="Number 2">
-      <select name="operator">
-        <option>None</option>
-        <option>Add</option>
-        <option>Subtract</option>
-        <option>Multiply</option>
-        <option>Divide</option>
-</select>
-<br>
-<button type="submit" name="submit" value="submit">Calculate</button>
-     
-</form>
-<p>The answer is: </p>
+
+<!DOCTYPE Html>
+<html>
+<head>
+
 <?php
-    if (isset($_GET['submit'])) {
-    $result1 = $_GET['num1'];
-    $result2 = $_GET['num2'];
-    $operator = $_GET['operator'];
-    switch ($operator) {
-    case "None":
-      echo "SYNTAX ERROR";
-      break;
-      case "Add":
-        echo $result1 + $result2;
-        break;
-        case "Subtract":
-          echo $result1 - $result2;
-          break;
-          case "Multiply":
-            echo $result1 * $result2;
-            break;
-            case "Divide":
-              echo $result1 /  $result2;
-              break;
-        }
-    }
-    ?>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+
+
+include "includes/header.php";
+$conn;
+
+?>
+
+    <meta charset="UTF-8">
+    <title>PHP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<form action="includes/signup.inc.php" method="POST">
+  <input type="text" name="first" placeholder="Firstname">
+  <br>
+  <input type="text" name="last" placeholder="Lastname">
+  <br>
+  <input type="text" name="email" placeholder="E-mail">
+  <br>
+  <input type="text" name="uid" placeholder="Username">
+  <br>
+  <input type="password" name="pwd" placeholder="Password">
+  <br>
+  <button type="submit" name="submit">Sign Up</button>
+  <br>
+</form>
 
 
 
-  </body>
-  </html>
-  
+
+</body>
+</html>
