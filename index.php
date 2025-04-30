@@ -1,3 +1,10 @@
+
+<?php
+session_start();
+ include 'includes/includes/dbh.inc.php';
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -48,11 +55,37 @@
     </style>
 
   <body>
+    <form action="includes/contact.php" method="POST">
+      <input  type=  "text" name="first" placeholder="Firstname">
+      <br>
+      <input  type=  "text" name="last" placeholder="Lastname">
+      <br>
+      <input  type=  "text" name="email" placeholder="E-mail">
+      <br>
+      <input  type=  "text" name="uid" placeholder="Username">
+      <br>
+      <input  type=  "password" name="pwd" placeholder="Password">
+      <br>
+      <button type="submit" name="submit" >Sign up</button>
+      </form>
   <?php
-session_start();
+    $sql = "SELECT * FROM users WHERE username ='john_doe';";
+    $result = mysqli_query($conn, $sql);
+    $resultCheck = mysqli_num_rows($result);
+    
+    if ($resultCheck > 0) {
+      while ($row = mysqli_fetch_assoc($result)) {
+        echo $row['username']. "<br>";
+      }
+    }
+
+
 ?>
+
+?>
+
  <?php 
- $_SESSION['username'] = "Johnnyle24b";
+ $_SESSION['username'] = "john_doe";
  echo $_SESSION ['username'];
 
  if (!isset($_SESSION['username'])) {
